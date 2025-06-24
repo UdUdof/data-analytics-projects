@@ -34,8 +34,10 @@ To identify key patterns in customer data that influence bike purchases, and pre
   - Bar chart: Avg. income per purchase (by gender)  
   - Line chart: Bike purchases by age bracket  
   - Line chart: Commute distance vs. purchase decision
-  
-  ![Bike Sales Dashboard](BikeSalesDB.png)
+  <p align="center">
+  <img src="NYCitiBikeDashboard.png" alt="Citi Bike Dashboard" width="600"/>
+</p>
+
 ---
 
 ## 🛠 Tools Used
