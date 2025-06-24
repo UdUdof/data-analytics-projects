@@ -1,36 +1,62 @@
-# Citi Bike Usage Analysis (Excel)
+# 🚴🏾Bike Sales Analysis Dashboard (Excel)
 
-This project analyzes Citi Bike ride data to better understand the behavior of both **one-time users** and **subscribers**. The goal is to uncover patterns in usage that can help inform **bike placement strategies** and **targeted marketing campaigns**.
-
----
-
-## 📌 Key Objectives
-
-- Explore how different customer segments (casual vs. subscribers) use Citi Bikes  
-- Identify trends in ride frequency, trip duration, and station usage  
-- Provide actionable insights to:
-  - Recommend where more bikes/stations may be needed  
-  - Suggest marketing directions tailored to rider types  
+This project explores customer demographics and purchasing behavior using Excel. I analyzed a bike sales dataset and developed an interactive dashboard to surface insights related to income, age, gender, commute distance, and purchase trends.
 
 ---
 
-## 📊 Tools Used
+## 📊 Project Objective
 
-- Microsoft Excel  
-  (Pivot Tables, Slicers, Charts, Conditional Formatting)
-
----
-
-## 📷 Dashboard Preview
-
-![Citi Bike Dashboard](excel/Citi-bike-data-analysis/NYCitiBikeDashboard.png)
-
-
-> The dashboard provides a dynamic view of rider types, trip details, and station usage—supporting better operational and marketing decisions.
+To identify key patterns in customer data that influence bike purchases, and present these insights through a clean, interactive Excel dashboard that supports data-driven decision-making.
 
 ---
 
-## 💡 Insights Gained
+## 🧩 Key Insights Visualized
 
-- Subscribers tend to take shorter, more frequent trips—ideal for commuting  
-- One-time users have longer rides—suggesting leisure or tourism use
+- **Average Income by Gender & Purchase Decision**  
+  Customers who purchased bikes generally had higher income across both genders, especially male buyers.
+
+- **Age Bracket Trends**  
+  The majority of bike purchases came from customers in the *Middle Age* bracket, with fewer purchases among adolescents and older customers.
+
+- **Commute Distance & Bike Purchase**  
+  Shorter commute distances (especially 0–1 miles) showed higher bike purchase rates compared to longer commutes.
+
+---
+
+## 📎 Dashboard Features
+
+- **Slicers for Filtering** by:
+  - Marital Status  
+  - Education  
+  - Region
+
+- **Interactive Charts**:
+  - Bar chart: Avg. income per purchase (by gender)  
+  - Line chart: Bike purchases by age bracket  
+  - Line chart: Commute distance vs. purchase decision
+
+---
+
+## 🛠 Tools Used
+
+- **Microsoft Excel**  
+  - Pivot Tables  
+  - Slicers  
+  - Charts  
+  - Conditional Formatting
+
+---
+
+## 📁 Files Included
+
+- `Bike Buyers.xlsx` – the Excel file with Raw dataset, Worksheet, Pivot Tables and Interactive dashboard   
+
+---
+
+## 💡 Takeaway
+
+This project demonstrates how Excel can be used not just for analysis, but for clean and effective data storytelling — highlighting how demographic and behavioral factors influence consumer decisions.
+
+---
+
+📸 *Explore the dashboard or try applying different slicers to generate your own insights!*
