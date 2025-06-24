@@ -35,7 +35,7 @@ To identify key patterns in customer data that influence bike purchases, and pre
   - Line chart: Bike purchases by age bracket  
   - Line chart: Commute distance vs. purchase decision
   
-  ![Bike Sales Dashboard](NYCitiBikeDashboard.png)
+  ![Bike Sales Dashboard](BikeSalesDB.png)
 ---
 
 ## 🛠 Tools Used
