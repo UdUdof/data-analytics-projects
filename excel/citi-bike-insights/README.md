@@ -1,4 +1,4 @@
-
+      ![Citi Bike Logo](NYCitiBikeDashboard.png)
 # 🚴🏽Citi Bike Customer Behavior Analysis
 
 This project explores Citi Bike trip data to better understand how different types of customers such as **subscribers** and **one-time users**  interact with the service. The aim is to uncover patterns in bike usage that can support operational and marketing decisions.
