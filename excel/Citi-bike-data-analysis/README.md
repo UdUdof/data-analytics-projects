@@ -23,7 +23,8 @@ This project analyzes Citi Bike ride data to better understand the behavior of b
 
 ## 📷 Dashboard Preview
 
-![Citi Bike Dashboard](./citi-bike-dashboard.png)
+![Citi Bike Dashboard](NYCitiBikeDashboard.png)
+
 
 > The dashboard provides a dynamic view of rider types, trip details, and station usage—supporting better operational and marketing decisions.
 
