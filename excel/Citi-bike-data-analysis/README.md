@@ -1,4 +1,4 @@
-# 🚴🏾Bike Sales Analysis Dashboard (Excel)
+# 🚴🏾Bike Sales Analysis (Excel)
 
 This project explores customer demographics and purchasing behavior using Excel. I analyzed a bike sales dataset and developed an interactive dashboard to surface insights related to income, age, gender, commute distance, and purchase trends.
 
