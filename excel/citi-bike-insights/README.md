@@ -42,7 +42,7 @@ To analyze Citi Bike customer behavior in order to:
 ## 📁 Files Included
 
 - `NewYorkCitiBikes.xlsx` – Excel file with raw & cleaned data, pivot tables, insights and recommendations
-  [Quick View](https://1drv.ms/x/c/2d0f9638f277c6b4/EfwP7HUSckZKtIyqng0SYOgB2HIiRTL5uKJPpn23itxMjA)
+  [Web View](https://1drv.ms/x/c/2d0f9638f277c6b4/EfwP7HUSckZKtIyqng0SYOgB2HIiRTL5uKJPpn23itxMjA)
 
 
 ---
