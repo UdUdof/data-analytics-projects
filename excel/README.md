@@ -7,7 +7,7 @@ This folder contains my projects using **Excel** for data cleaning, analysis, an
 - Project 1: Citi Bike Insights  
   A project exploring the Citi Bike trip dataset to better understand how customers interact with the service.
 
-- Project 2: Inventory Tracking  
+- Project 2: Sales Performance Analysis  
   Tracking inventory trends with formulas and conditional formatting.
 
 - Project 2: Inventory Tracking  
