@@ -1,4 +1,4 @@
-#     
+    
 <p align="center">
   <img src="CitiBike.png" alt="Citi Bike Logo" width="600"/>
 </p>
@@ -52,6 +52,12 @@ This analysis provides data-driven recommendations for:
 - **Optimizing bike station placement**
 - **Enhancing the customer experience**
 - **Creating targeted marketing for different rider profiles**
+    ### 🚴🏾 Rider Behavior at a Glance
+     One  of the charts generated from the dataset include popular pickup locations.
+  - **Action point/Recommendation:** An increase in the availability of bikes for rent at the top pick-up spots based on demand trends.
+    <p align="center">
+      <img src="StnPlmt.png" alt="Citi Bike Logo" width="500"/>
+    </p>
 
 ---
 
