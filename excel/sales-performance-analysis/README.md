@@ -70,7 +70,7 @@ The dataset includes transactional and customer-level information with the follo
 
 ## 📁 Files Included
 
-- `SalesPerformance.xlsx` – Interactive dashboard file  [Sales Performance File](https://1drv.ms/x/c/2d0f9638f277c6b4/EdUQoRorRENAixte-AFHbBEBElXivRvTyWusJLwTlX4CmA?e=x6hnkm) 
+- `SalesPerformance.xlsx` – Interactive dashboard file  [Web View](https://1drv.ms/x/c/2d0f9638f277c6b4/EdUQoRorRENAixte-AFHbBEBElXivRvTyWusJLwTlX4CmA?e=x6hnkm) 
 - `SalesData.png` – Preview of the dataset 
 - `SalesDB.png` – Preview of the dashboard layout
   
