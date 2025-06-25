@@ -42,7 +42,7 @@ To analyze Citi Bike customer behavior in order to:
 ## 📁 Files Included
 
 - `New York Citi Bikes.xlsx` – Excel file with raw & cleaned data, pivot tables, insights and recommendations
-
+    📥 [Download the Excel dashboard](BikeSalesDashboard.xlsx)
 ---
 
 ## 💡 Outcomes
@@ -62,3 +62,5 @@ This analysis provides data-driven recommendations for:
 ---
 
 📍 *This project demonstrates how data can be used to support smart city planning and improve shared mobility systems.*
+
+
