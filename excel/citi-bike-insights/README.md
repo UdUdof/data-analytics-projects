@@ -7,7 +7,7 @@
 
 This project explores the Citi Bike trip dataset to better understand how different types of customers such as **subscribers** and **one-time users**  interact with the service. The aim is to uncover patterns in bike usage that can support operational and marketing decisions.
   <p align="center">
-  <img src="CBData.png" alt="Citi Bike Logo" width="900"/>
+  <img src="CBData.png" alt="Citi Bike Logo" width="750"/>
 </p>
     
 ---
