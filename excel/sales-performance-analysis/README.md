@@ -28,7 +28,7 @@ The dataset includes transactional and customer-level information with the follo
 ---
 
 
-## 📊 Key Features on Dashboard
+## 📊 Key Dashboard Features
 
 ### 🗂️KPI Cards - Metrics 
 - **Total Transactions**
