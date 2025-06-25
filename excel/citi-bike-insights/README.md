@@ -58,9 +58,8 @@ This analysis provides data-driven recommendations for:
     ### 🚴🏾 Rider Behavior at a Glance
      One  of the charts generated from the dataset include popular pickup locations.
   - **Action point/Recommendation:** An increase in the availability of bikes for rent at the top pick-up spots based on demand trends.
-    <p align="center">
-      <img src="StnPlmt.png" alt="Citi Bike Logo" width="500"/>
-    </p>
+
+    <img src="Summary.png" alt="Pick-up Station Summary" width="1200" height="300">
 
 ---
 
