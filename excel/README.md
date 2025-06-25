@@ -4,7 +4,7 @@ This folder contains my projects using **Excel** for data cleaning, analysis, an
 
 ## Projects
 
-- Project 1: Sales Analysis  
+- Project 1: Citi Bike Insights  
   A basic project analyzing sales data using pivot tables and charts.
 
 - Project 2: Inventory Tracking  
