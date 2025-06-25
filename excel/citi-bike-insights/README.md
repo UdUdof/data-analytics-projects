@@ -59,7 +59,9 @@ This analysis provides data-driven recommendations for:
      One  of the charts generated from the dataset include popular pickup locations.
   - **Action point/Recommendation:** An increase in the availability of bikes for rent at the top pick-up spots based on demand trends.
 
-    <img src="Summary.png" alt="Pick-up Station Summary" width="1200" height="300">
+    <p align="center">
+  <img src="Summary.png" alt="Summary" width="1500" height="200">
+</p>
 
 ---
 
