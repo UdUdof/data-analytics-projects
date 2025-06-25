@@ -1,7 +1,7 @@
 # Sales Performance Analysis 
 
 This project presents an in-depth analysis of sales data to track performance, customer behavior, and product profitability. The dashboard was built using Microsoft Excel and provides a clear, interactive view of key business metrics across multiple dimensions.
-
+  
 ---
 
 ## 🎯 Project Objective
@@ -9,10 +9,28 @@ This project presents an in-depth analysis of sales data to track performance, c
 To create a comprehensive Excel dashboard that helps monitor overall sales performance, highlight profit trends, and uncover opportunities by customer, product, and region.
 
 ---
+## Dataset Overview
 
-## 📊 Key Features
+The dataset includes transactional and customer-level information with the following key fields:
 
-### 🗂️ Dashboard Metrics (KPI Cards)
+- **Date, Year, Month**
+- **Customer Measure (High / Low)**
+- **Salesperson**
+- **Customer Gender, Age**
+- **Location: State**
+- **Product Category & Sub-Category**
+- **Payment Option**
+- **Quantity, Unit Cost, Total Cost, Total Revenue, Profit/Loss, etc**
+  <p align="center">
+  <img src="SalesData.png" alt="Sales Dataset" width="800"/>
+</p>
+
+---
+
+
+## 📊 Key Features on Dashboard
+
+### 🗂️KPI Cards - Metrics 
 - **Total Transactions**
 - **Total Quantity Sold**
 - **Total Cost**
@@ -34,21 +52,6 @@ To create a comprehensive Excel dashboard that helps monitor overall sales perfo
 
 ---
 
-## Dataset Overview
-
-The dataset includes transactional and customer-level information with the following key fields:
-
-- **Date, Year, Month**
-- **Customer Measure (High / Low)**
-- **Salesperson**
-- **Customer Gender, Age**
-- **Location: State**
-- **Product Category & Sub-Category**
-- **Payment Option**
-- **Quantity, Unit Cost, Total Cost, Total Revenue, Profit/Loss**
-
----
-
 ## 🛠 Tools Used
 
 - **Microsoft Excel**
@@ -63,8 +66,9 @@ The dataset includes transactional and customer-level information with the follo
 ## 📁 Files Included
 
 - `SalesPerformance.xlsx` – Interactive dashboard file  
-- `SalesDashboard.png` – Preview of the dashboard layout  
-
+- `SalesData.png` – Preview of the dataset 
+- `SalesDB.png` – Preview of the dashboard layout
+  
 ---
 
 ## 💡 Insights & Outcomes
@@ -73,6 +77,9 @@ The dataset includes transactional and customer-level information with the follo
 - Tracked yearly profit trends to evaluate business growth
 - Highlighted gender-based differences in purchasing behavior
 - Assessed the impact of payment options on total profit
+  <p align="center">
+  <img src="SalesDB.png" alt="Sales Dashboard" width="900" height="270"/>
+</p>
 
 ---
 
