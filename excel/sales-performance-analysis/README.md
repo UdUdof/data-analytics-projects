@@ -1,6 +1,6 @@
 # 
 <p align="center">
-    <img src="retail.jpg" alt="image" width="800" height="300"/>
+    <img src="retail.jpg" alt="image" width="700" height="330"/>
   </p>
   
 # Sales Performance Analysis 
