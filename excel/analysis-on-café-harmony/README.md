@@ -42,7 +42,7 @@ The workbook consists of the following sheets:
 
 ## 📊 Dashboard Features
   <p align="center">
-    <img src="Dashboard.png" alt="Cafe Harmony Dashboard" width="750" height="310">
+    <img src="Dashboard.png" alt="Cafe Harmony Dashboard" width="900" height="400">
   </p>
 
 ### ✅ KPI Summary Cards
