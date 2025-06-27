@@ -38,6 +38,9 @@ The workbook consists of the following sheets:
   <p align="center">
     <img src="Dataset.png" alt="Cafe Harmony's Dataset" width="800" height="380">
   </p>
+
+     [Web View](https://1drv.ms/x/c/2d0f9638f277c6b4/EYppzwWXdwxDub_1RY-6DLIB5jTRtm_LfT05W3HIAHGbhg)
+  
 ---
 
 ## 📊 Dashboard Features
