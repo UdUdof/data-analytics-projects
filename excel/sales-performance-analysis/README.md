@@ -1,9 +1,9 @@
 # 
 <p align="center">
-    <img src="retail.jpg" alt="image" width="700" height="330"/>
+    <img src="retail.jpg" alt="image" width="700" height="400"/>
   </p>
   
-# Sales Performance Analysis 
+# 🛍️ Sales Performance Analysis 🛍️
 
 This project presents an in-depth analysis of sales data to track performance, customer behavior, and product profitability. The dashboard was built using Microsoft Excel and provides a clear, interactive view of key business metrics across multiple dimensions.
 
@@ -27,7 +27,7 @@ The dataset includes transactional and customer-level information with the follo
 - **Payment Option**
 - **Quantity, Unit Cost, Total Cost, Total Revenue, Profit/Loss, etc**
   <p align="center">
-  <img src="SalesData.png" alt="Sales Dataset" width="800"/>
+  <img src="SalesData.png" alt="Sales Dataset" width="900"/>
 </p>
 
 ---
@@ -54,6 +54,9 @@ The dataset includes transactional and customer-level information with the follo
 ### 🎛️ Interactive Elements
 - **Salesperson Slicer** – filter views by individual salesperson
 - **Payment Option Slicer** – analyze performance by payment method
+        <p align="center">
+  <img src="SalesDB.png" alt="Sales Dashboard" width="1050" height="320"/>
+</p>
 
 ---
 
@@ -82,9 +85,6 @@ The dataset includes transactional and customer-level information with the follo
 - Tracked yearly profit trends to evaluate business growth
 - Highlighted gender-based differences in purchasing behavior
 - Assessed the impact of payment options on total profit
-  <p align="center">
-  <img src="SalesDB.png" alt="Sales Dashboard" width="900" height="270"/>
-</p>
 
 ---
 
