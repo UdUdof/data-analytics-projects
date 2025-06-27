@@ -3,7 +3,7 @@
     <img src="businessPr.png" alt="Cafe Harmony" width="300" height="450">
   </p>
   
-# ☕ Café Harmony Business Performance
+# ☕ Café Harmony Business Performance 
 
 Café Harmony has seen impressive growth but now faces new challenges as the company is scaling to meet customer
 demand. This project provides a comprehensive analysis of Café Harmony’s business operations using a multi-sheet dataset. Built in Microsoft Excel, the interactive dashboard tracks key performance indicators across sales, customer feedback, inventory, and employee data, helping the company's management make key decisions for growth.
