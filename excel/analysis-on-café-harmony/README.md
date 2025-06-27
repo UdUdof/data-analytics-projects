@@ -1,6 +1,6 @@
 #
   <p align="center">
-    <img src="Cafe.png" alt="Cafe Harmony" width="700" height="350">
+    <img src="businessPr.png" alt="Cafe Harmony" width="300" height="400">
   </p>
   
 # ☕ Café Harmony Business Performance
