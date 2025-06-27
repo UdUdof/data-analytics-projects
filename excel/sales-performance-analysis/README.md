@@ -3,7 +3,7 @@
     <img src="retail.jpg" alt="image" width="700" height="400"/>
   </p>
   
-# 🛍️ Sales Performance Analysis 🛍️
+# 🛍️ Sales Performance Analysis 
 
 This project presents an in-depth analysis of sales data to track performance, customer behavior, and product profitability. The dashboard was built using Microsoft Excel and provides a clear, interactive view of key business metrics across multiple dimensions.
 
