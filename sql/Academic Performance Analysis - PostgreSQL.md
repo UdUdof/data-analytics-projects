@@ -9,8 +9,8 @@ It demonstrates practical skills in database design, SQL querying, and data insi
 
 | Table       | Description                                      |
 |-------------|--------------------------------------------------|
-| `departments` | List of departments (e.g., Science, Arts)       |
-| `courses`     | Courses offered, linked to departments & teachers |
+| `departments` | List of departments                            |
+| `courses`     | Courses offered, linked to departments & scores |
 | `teacher`     | Teacher details                                 |
 | `scores`      | Student scores per course                      |
 
