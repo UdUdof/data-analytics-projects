@@ -38,9 +38,7 @@ It demonstrates practical skills in database design, SQL querying, and data insi
 	SELECT course_name AS "Courses"
 	FROM courses;
 ```
-<p align="left">
-  <img src="coursesOffered.png" alt="courses" width="250" height="50"/>
-</p>
+<img src="docs/coursesOffered.png" alt="ERD Diagram" width="300" height="100">
 Looks like this department is for data analytics, awesome!
 
 ---
@@ -50,9 +48,7 @@ Looks like this department is for data analytics, awesome!
 	SELECT department_id, department_name
 	FROM departments;
 ```
-<p align="left">
-  <img src="dept.png" alt="Number of departments in the academy" width="250" height="100"/>
-</p>
+<img src="docs/dept.png" alt="ERD Diagram" width="300" height="100">
 There're four(4) departments, each focused on the various tools used in Data Analytics
 
 ---
@@ -61,9 +57,7 @@ There're four(4) departments, each focused on the various tools used in Data Ana
 	SELECT COUNT(DISTINCT(teacher_id))
 	FROM teacher;
 ```
-<p align="left">
-  <img src="teachers.png" alt="Total number of teachers" width="250" height="100"/>
-</p>
+<img src="docs/teachers.png" alt="ERD Diagram" width="150" height="150">
 There's a total of eight(8) teachers in the academy
 
 ---
@@ -77,9 +71,7 @@ There's a total of eight(8) teachers in the academy
 	  departments d ON c.department = d.department_id
 	  GROUP BY d.department_name, d.department_id;
 ```
-<p align="left">
-  <img src="studentsPerDept.png" alt="Number of students per department" width="500" height="500"/>
-</p>
+<img src="docs/studentsPerDept.png" alt="ERD Diagram" width="400" height="400">
 Only departments 1 and 2 have students taking courses
 
 ---
@@ -93,9 +85,7 @@ Only departments 1 and 2 have students taking courses
 	  departments d ON c.department = d.department_id
 	  GROUP BY d.department_name, d.department_id;
 ```
-<p align="left">
-  <img src="CrsPerDept.png" alt="Courses offered per department" width="500" height="500"/>
-</p>
+<img src="docs/CourseperDept.png" alt="ERD Diagram" width="500" height="500">
 Department 1 seems to be the one with the highest number of courses as compared to department 2
 
 ---
@@ -111,9 +101,7 @@ Department 1 seems to be the one with the highest number of courses as compared 
 	ORDER BY 
 	  "Average Score Per Department" DESC;
 ```
-<p align="left">
-  <img src="avgScrDept.png" alt="Average score by department" width="500" height="500"/>
-</p>
+<img src="docs/AvgScoreDept.png" alt="ERD Diagram" width="550" height="550">
 Average scores are around 50 and this could indicate that the students are struggling in their courses
 
 ---
@@ -123,9 +111,7 @@ Average scores are around 50 and this could indicate that the students are strug
 	FROM teacher
 	GROUP BY teacher_id, teacher_name;
 ```
-<p align="left">
-  <img src="TchrNumCrs.png" alt="Courses Per Teacher" width="500" height="500"/>
-</p>
+<img src="docs/TeachersNumCourse.png" alt="ERD Diagram" width="600" height="600">
 All the teachers are handling only 1 course each
 
 ---
@@ -142,9 +128,7 @@ All the teachers are handling only 1 course each
 	ORDER BY 
 	  "Average Student Score" DESC;
 ```
-<p align="left">
-  <img src="avgScrPerTchr.png" alt="Average student score per teacher" width="500" height="500"/>
-</p>
+<img src="docs/AvgScoreTeacher.png" alt="ERD Diagram" width="500" height="500">
 Student averages are around 50 per teacher, this might suggest that the department heads need to evaluate the performances and how it can be improved
 
 ---
@@ -156,9 +140,7 @@ Student averages are around 50 per teacher, this might suggest that the departme
 	JOIN courses c ON s.course_id = c.course_id
 	GROUP BY c.course_name;
 ```
-<p align="left">
-  <img src="avgMinMaxPerCrse.png" alt="Score breakdown per course" width="500" height="500"/>
-</p>
+<img src="docs/AvgMinMaxPerCourse.png" alt="ERD Diagram" width="500" height="500">
 
 ---
 ###  10. A sneak peak of some of the students' grades per course
@@ -174,7 +156,5 @@ Student averages are around 50 per teacher, this might suggest that the departme
 	FROM scores s
 	JOIN courses c ON s.course_id = c.course_id;
 ```
-<p align="left">
-  <img src="grdsPerCrse.png" alt="Student grades per course" width="500" height="500"/>
-</p>
+<img src="docs/GradesPerCpurse.png" alt="ERD Diagram" width="500" height="500">
 
