@@ -48,7 +48,7 @@ Looks like this department is for data analytics, awesome!
 	SELECT department_id, department_name
 	FROM departments;
 ```
-<img src="docs/dept.png" alt="ERD Diagram" width="300" height="100">
+<img src="docs/dept.png" alt="ERD Diagram" width="400" height="400">
 There're four(4) departments, each focused on the various tools used in Data Analytics
 
 ---
@@ -57,7 +57,7 @@ There're four(4) departments, each focused on the various tools used in Data Ana
 	SELECT COUNT(DISTINCT(teacher_id))
 	FROM teacher;
 ```
-<img src="docs/teachers.png" alt="ERD Diagram" width="150" height="150">
+<img src="docs/teachers.png" alt="ERD Diagram" width="200" height="200">
 There's a total of eight(8) teachers in the academy
 
 ---
@@ -71,7 +71,7 @@ There's a total of eight(8) teachers in the academy
 	  departments d ON c.department = d.department_id
 	  GROUP BY d.department_name, d.department_id;
 ```
-<img src="docs/studentsPerDept.png" alt="ERD Diagram" width="400" height="400">
+<img src="docs/studentsPerDept.png" alt="ERD Diagram" width="450" height="450">
 Only departments 1 and 2 have students taking courses
 
 ---
@@ -111,7 +111,7 @@ Average scores are around 50 and this could indicate that the students are strug
 	FROM teacher
 	GROUP BY teacher_id, teacher_name;
 ```
-<img src="docs/TeachersNumCourse.png" alt="ERD Diagram" width="600" height="600">
+<img src="docs/TeachersNumCourse.png" alt="ERD Diagram" width="500" height="500">
 All the teachers are handling only 1 course each
 
 ---
