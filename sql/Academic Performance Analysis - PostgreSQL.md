@@ -39,7 +39,7 @@ It demonstrates practical skills in database design, SQL querying, and data insi
 	FROM courses;
 ```
 <p align="left">
-  <img src="coursesOffered.png" alt="courses" width="250" height="100"/>
+  <img src="coursesOffered.png" alt="courses" width="250" height="50"/>
 </p>
 Looks like this department is for Data Analytics, awesome!
 
@@ -51,12 +51,20 @@ Looks like this department is for Data Analytics, awesome!
 	FROM departments;
 ```
 <p align="left">
-  <img src="coursesOffered.png" alt="courses" width="250" height="100"/>
+  <img src="dept.png" alt="depts" width="250" height="100"/>
 </p>
-Looks like this department is for Data Analytics, awesome!
+There're four(4) departments, each focused on the various tools used in Data Analytics
 
+### 📌 3. Number of Teachers
+```sql
+	SELECT COUNT(DISTINCT(teacher_id))
+	FROM teacher;
+```
+<p align="left">
+  <img src="dept.png" alt="depts" width="250" height="100"/>
+</p>
+There're four(4) departments, each focused on the various tools used in Data Analytics
 
-
-
+---
 
 
