@@ -4,7 +4,7 @@ Welcome to my collection of **SQL** projects, where I explore and analyze data t
 
 ## Projects
 
-- **Project 1: Sales Data Analysis**  
+- **Project 1: Academic Performance Analysis**  
   Writing SQL queries to extract, filter, and summarize sales data for business insights.
 
 - **Project 2: Customer Segmentation**  
