@@ -5,7 +5,7 @@ Welcome to my collection of **SQL** projects, where I explore and analyze data t
 ## Projects
 
 - **Project 1: Academic Performance Analysis**  
-  Writing SQL queries to extract, filter, and summarize sales data for business insights.
+  Writing SQL queries to extract data to analyze academic performance.
 
 - **Project 2: Customer Segmentation**  
   Using advanced SQL techniques to group customers based on purchasing behavior.
