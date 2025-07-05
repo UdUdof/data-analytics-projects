@@ -55,7 +55,8 @@ Looks like this department is for Data Analytics, awesome!
 </p>
 There're four(4) departments, each focused on the various tools used in Data Analytics
 
-### 📌 3. Number of Teachers
+---
+### 📌 3. Number of teachers
 ```sql
 	SELECT COUNT(DISTINCT(teacher_id))
 	FROM teacher;
@@ -64,6 +65,38 @@ There're four(4) departments, each focused on the various tools used in Data Ana
   <img src="teachers.png" alt="depts" width="250" height="100"/>
 </p>
 There's a total of eight(8) teachers in the school
+
+---
+### 📌 4. Number of students per department
+```sql
+	SELECT d.department_id, d.department_name, COUNT(s.student_id) AS "Number of Students"
+	FROM scores s
+	JOIN 
+	  courses c ON s.course_id = c.course_id
+	RIGHT JOIN 
+	  departments d ON c.department = d.department_id
+	  GROUP BY d.department_name, d.department_id;
+```
+<p align="left">
+  <img src="studentsPerDept.png" alt="Studepts" width="250" height="100"/>
+</p>
+Only departsment 1 and 2 have students taking courses
+
+---
+### 📌 5. Number of courses offered in each department
+```sql
+	SELECT d.department_id, d.department_name, COUNT(s.student_id) AS "Number of Students"
+	FROM scores s
+	JOIN 
+	  courses c ON s.course_id = c.course_id
+	RIGHT JOIN 
+	  departments d ON c.department = d.department_id
+	  GROUP BY d.department_name, d.department_id;
+```
+<p align="left">
+  <img src="studentsPerDept.png" alt="Studepts" width="250" height="100"/>
+</p>
+Only departments 1 and 2 have students taking courses
 
 ---
 
