@@ -94,7 +94,7 @@ Only departsment 1 and 2 have students taking courses
 	  GROUP BY d.department_name, d.department_id;
 ```
 <p align="left">
-  <img src="studentsPerDept.png" alt="Studepts" width="250" height="100"/>
+  <img src="coursesOffered.png" alt="coursesOfferes" width="250" height="100"/>
 </p>
 Only departments 1 and 2 have students taking courses
 
