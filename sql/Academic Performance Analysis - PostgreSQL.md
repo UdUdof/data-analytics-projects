@@ -24,7 +24,7 @@ It demonstrates practical skills in database design, SQL querying, and data insi
 - A **course** can have many **scores** (one per student)
 - Each **score** ties a student to a course
 
-![ERD](docs/ERD_diagram.png)  
+![ERD](EntityDiagram.png)  
 > _Add your ERD image to `docs/ERD_diagram.png` and link it here._
 
 ---
