@@ -10,7 +10,6 @@ Welcome to my collection of **SQL** projects, where I explore and analyze data t
 - **Project 2: Customer Segmentation**  
   Using advanced SQL techniques to group customers based on purchasing behavior.
 
-*(More projects coming soon!)*
 
 ---
 
