@@ -46,6 +46,20 @@ GROUP BY "ProductCategory";
 ```
 <img src="docs/DiscountedRevenue.png" alt="ERD Diagram" width="300" height="100">
 
+---
+### 2. What is the total revenue generated, considering that products with a NULL price should be treated as having a default price of $10?  
+```sql
+SELECT "ProductCategory", 
+  	 	SUM(CASE
+           WHEN "Price" > 100 then "Price" * 0.9 * "Quantity" 
+  				 WHEN "Price" BETWEEN 50 AND 100 then "Price" * 0.95 * "Quantity" 
+  				 ELSE "Price" * "Quantity"
+  		END) AS "Discounted Revenue" 
+FROM orders
+JOIN products on orders."ProductID" = products."ProductID" --JOIN: INNER
+GROUP BY "ProductCategory";
+```
+<img src="docs/DiscountedRevenue.png" alt="ERD Diagram" width="300" height="100">
 
 
 
