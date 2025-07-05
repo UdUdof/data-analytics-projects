@@ -61,9 +61,9 @@ There're four(4) departments, each focused on the various tools used in Data Ana
 	FROM teacher;
 ```
 <p align="left">
-  <img src="dept.png" alt="depts" width="250" height="100"/>
+  <img src="teachers.png" alt="depts" width="250" height="100"/>
 </p>
-There're four(4) departments, each focused on the various tools used in Data Analytics
+There's a total of eight(8) teachers in the school
 
 ---
 
