@@ -8,7 +8,7 @@ Welcome to my collection of **SQL** projects, where I explore and analyze data t
   Writing SQL queries to extract data to analyze academic performance.
 
 - **Project 2: Business Performance Analysis**  
-  Using advanced SQL techniques to group customers based on purchasing behavior.
+  This project analyzes sales and product performance for a business.
 
 
 ---
