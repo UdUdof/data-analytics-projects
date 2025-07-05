@@ -41,17 +41,17 @@ It demonstrates practical skills in database design, SQL querying, and data insi
 <p align="left">
   <img src="coursesOffered.png" alt="courses" width="250" height="50"/>
 </p>
-Looks like this department is for Data Analytics, awesome!
+Looks like this department is for data analytics, awesome!
 
 ---
 
-###  2. The departments in the school
+###  2. The departments in the academy
 ```sql
 	SELECT department_id, department_name
 	FROM departments;
 ```
 <p align="left">
-  <img src="dept.png" alt="Number of departments in the school" width="250" height="100"/>
+  <img src="dept.png" alt="Number of departments in the academy" width="250" height="100"/>
 </p>
 There're four(4) departments, each focused on the various tools used in Data Analytics
 
@@ -64,7 +64,7 @@ There're four(4) departments, each focused on the various tools used in Data Ana
 <p align="left">
   <img src="teachers.png" alt="Total number of teachers" width="250" height="100"/>
 </p>
-There's a total of eight(8) teachers in the school
+There's a total of eight(8) teachers in the academy
 
 ---
 ###  4. Number of students per department
@@ -114,7 +114,7 @@ Department 1 seems to be the one with the highest number of courses as compared 
 <p align="left">
   <img src="avgScrDept.png" alt="Average score by department" width="500" height="500"/>
 </p>
-Average scores are around 50 and could show that the students are struggling in their courses
+Average scores are around 50 and this could indicate that the students are struggling in their courses
 
 ---
 ###  7. Which teacher teaches the most courses?
