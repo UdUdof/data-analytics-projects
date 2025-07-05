@@ -44,4 +44,11 @@ FROM orders
 JOIN products on orders."ProductID" = products."ProductID" --JOIN: INNER
 GROUP BY "ProductCategory";
 ```
-![ERD Diagram](docs/ERD_diagram.png)
+<img src="docs/DiscountedRevenue.png" alt="ERD Diagram" width="300" height="100">
+
+
+
+
+
+
+
