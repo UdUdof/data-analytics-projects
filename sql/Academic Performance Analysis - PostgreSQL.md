@@ -33,7 +33,30 @@ It demonstrates practical skills in database design, SQL querying, and data insi
 
 ## 🗝️ **Key Queries & Insights**
 
-### 📌 1. Number of courses offered per department
+### 📌 1. Courses offered per department
 ```sql
 	SELECT course_name AS "Courses"
 	FROM courses;
+```
+<p align="left">
+  <img src="coursesOffered.png" alt="courses" width="250" height="100"/>
+</p>
+Looks like this department is for Data Analytics, awesome!
+
+---
+
+### 📌 2. The departments in the school
+```sql
+	SELECT department_id, department_name
+	FROM departments;
+```
+<p align="left">
+  <img src="coursesOffered.png" alt="courses" width="250" height="100"/>
+</p>
+Looks like this department is for Data Analytics, awesome!
+
+
+
+
+
+
