@@ -220,5 +220,9 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 ```
 No more redundant data!
+
 <img src="tpFixed.png" alt="" width="500" height="500">
+
+
+
 
