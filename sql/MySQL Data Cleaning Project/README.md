@@ -73,7 +73,7 @@ FROM duplicate_cte
 WHERE row_num > 1;
 ```
 <img src="docs/rowNum2.png" alt="duplicate rows" width="650" height="650">
-**Action:** I tried to remove the duplicate values
+I tried to remove the duplicate values
 
 ```sql
 DELETE
@@ -81,7 +81,7 @@ FROM duplicate_cte
 WHERE row_num > 1;
 ```
 
-**Action:** Guess what! This did not work so I created a new table(layoffs_staging2), inserted values from layoffs_staging, and found duplicates again
+Guess what! This did not work so I created a new table(layoffs_staging2), inserted values from layoffs_staging, and found duplicates again
 ```sql
 SELECT *
 FROM layoffs_staging2
@@ -89,18 +89,42 @@ WHERE row_num > 1;
 ```
 <img src="docs/rowNum3.png" alt="duplicate rows" width="750" height="700">
 
-**Action:** I tried again to remove the duplicate values
+I tried again to remove the duplicate values
 
 ```sql
 DELETE
 FROM layoffs_staging2
 WHERE row_num > 1;
 ```
-**Action:** Checking to see if it worked
+Checking to see if it worked
 ```sql
 SELECT *
 FROM layoffs_staging2
 WHERE row_num > 1;
 ```
-**Action:** They're gone!! What a relief! 🥳😅
+
+They're gone!! What a relief! 🥳😅
+
 <img src="docs/dupligatesGone.png" alt="duplicates Removed" width="750" height="700">
+
+---
+
+### ✅ 2. Standardize the Data
+- This is the process of converting data to a common format to enable users to process and analyze it
+  
+**Action:** To do this, I had to go through the individual columns most of the time to see if something needs to be fixed
+```sql
+SELECT DISTINCT industry
+FROM layoffs_staging2
+ORDER BY 1;
+```
+<img src="docs/crypto1.png" alt="" width="750" height="700">
+
+```sql
+UPDATE layoffs_staging2
+SET company = trim(company);
+```
+```sql
+UPDATE layoffs_staging2
+SET company = trim(company);
+```
