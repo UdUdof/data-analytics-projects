@@ -213,7 +213,12 @@ Rows with both total_laid_off and percentage_laid_off missing were removed becau
  SELECT *
 FROM layoffs_staging2
 WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
-```  
+```
+
+```sql
+ DELETE FROM layoffs_staging2
+WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
+```
 No more redundant data!
-<img src="tpFixed.png" alt="" width="700" height="700">
+<img src="tpFixed.png" alt="" width="500" height="500">
 
