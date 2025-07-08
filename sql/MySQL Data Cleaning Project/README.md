@@ -29,7 +29,7 @@ To apply **SQL data cleaning techniques** so the final dataset is reliable for a
 
 ---
 ## 👷🏼‍♀️ **Let's Get To Work!**
-   To prevent accidental changes to the original dataset, I duplicated the data into a new table (layoffs_staging) before starting the cleaning process
+   **Action:** To prevent accidental changes to the original dataset, I duplicated the data into a new table (layoffs_staging) before starting the cleaning process
 
 ```sql
 CREATE TABLE layoffs_staging
@@ -50,7 +50,7 @@ FROM layoffs;
 Below are some tasks I performed with **MySQL queries**.
 
 ### ✅ 1. Remove Duplicates
-I used row numbers to identify duplicates, so any row with a number greater than 1 is a duplicate
+**Action:** I used row numbers to identify duplicates, so any row with a number greater than 1 is a duplicate
 ```sql
 SELECT *,
 ROW_NUMBER() OVER(
@@ -59,7 +59,7 @@ FROM world_layoffs.layoffs_staging;
 ```
 <img src="docs/rowNum.png" alt="assigning row numbers" width="650" height="650">
 
-Then, I used a common table expression to find all the rows with a number greater than 1 (duplicates)
+**Action:** Then, I used a common table expression to find all the rows with a number greater than 1 (duplicates)
 ```sql
 WITH duplicate_cte AS
 (
@@ -73,7 +73,7 @@ FROM duplicate_cte
 WHERE row_num > 1;
 ```
 <img src="docs/rowNum2.png" alt="duplicate rows" width="650" height="650">
-I tried to remove the duplicate values
+**Action:** I tried to remove the duplicate values
 
 ```sql
 DELETE
@@ -81,10 +81,26 @@ FROM duplicate_cte
 WHERE row_num > 1;
 ```
 
-Guess what! This did not work so I created a new table(layoffs_staging2), inserted values from layoffs_staging, and found duplicates again 🤦🏻
+**Action:** Guess what! This did not work so I created a new table(layoffs_staging2), inserted values from layoffs_staging, and found duplicates again
 ```sql
 SELECT *
 FROM layoffs_staging2
 WHERE row_num > 1;
 ```
-<img src="docs/rowNum4.png" alt="duplicate rows" width="650" height="650">
+<img src="docs/rowNum3.png" alt="duplicate rows" width="750" height="700">
+
+**Action:** I tried again to remove the duplicate values
+
+```sql
+DELETE
+FROM layoffs_staging2
+WHERE row_num > 1;
+```
+**Action:** Checking to see if it worked
+```sql
+SELECT *
+FROM layoffs_staging2
+WHERE row_num > 1;
+```
+**Action:** They're gone!! What a relief! 🥳😅
+<img src="docs/dupligatesGone.png" alt="duplicates Removed" width="750" height="700">
