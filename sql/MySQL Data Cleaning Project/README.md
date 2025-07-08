@@ -131,4 +131,4 @@ UPDATE layoffs_staging2
 SET industry = 'Crypto'
 WHERE industry LIKE 'Crypto%';
 ```
-<img src="docs/crypto2.png" alt="" width="100" height="300">
+<img src="docs/crypto2.png" alt="" width="100" height="200">
