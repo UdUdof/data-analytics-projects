@@ -133,7 +133,7 @@ WHERE industry LIKE 'Crypto%';
 ```
 <img src="docs/crypto2.png" alt="" width="100" height="200">
 
-I did this for an entry in "country"
+I did this for an entry in the "country" column
 ```sql
 SELECT DISTINCT country
 FROM layoffs_staging2
@@ -144,7 +144,8 @@ UPDATE layoffs_staging2
 SET country = 'United States'
 WHERE country LIKE 'United States%';
 ```
-<img src="docs/crypto2.png" alt="" width="100" height="200">
+<img src="docs/us1.png" alt="" width="100" height="120">  ~   <img src="docs/us2.png" alt="" width="100" height="100">
 
 #### 2b. Formatting the dataset
-While i was trying to upload the dataset as a csv to MySQL, some of the rows would not show up so I had to convert it to JSON file. Because of this most of the fields(columns) were read in as TEXT. For this dataset to be functional, columns have to be in a format that MySQL can recognize them. So I changed the date column from TEXT to sql DATE format 
+While uploading the dataset as a CSV to MySQL, some rows didn’t import correctly. To fix this, I converted the file to JSON instead. However, this caused most of the columns to be read in as TEXT data types. To make the dataset functional and ensure MySQL recognizes each column correctly, I converted the date column from TEXT to the proper DATE format.
+<img src="docs/us1.png" alt="" width="100" height="120">  ~   <img src="docs/us2.png" alt="" width="100" height="100">
