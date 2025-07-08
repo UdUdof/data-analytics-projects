@@ -1,4 +1,4 @@
-# 🧹 MySQL Data Cleaning Project — [Dataset Name]
+# 🧹 MySQL Data Cleaning Project — layoffs
 
 This project demonstrates **practical data cleaning** using **MySQL**.  
 It showcases techniques to check, clean, and transform raw data into a usable format for analysis.
@@ -8,11 +8,11 @@ It showcases techniques to check, clean, and transform raw data into a usable fo
 ## 📊 **Project Overview**
 
 **Context:**  
-The dataset includes the names of com dataset was collected shared by Alex The Analyst on Youtube  
+This dataset records company layoffs, showing how many people were laid off, what percentage of each company’s workforce was affected, when the layoffs occurred, and where they happened. The project aims to clean this data to make it usable for analysis. The dataset was shared by Alex The Analyst on Youtube  
 It contained common issues such as:
-- Inconsistent formatting
 - Duplicates
-- NULL or missing values
+- Inconsistent formatting
+- NULL or blank values
 - Outliers and invalid records
 
 **Goal:**  
@@ -24,9 +24,8 @@ To apply **SQL data cleaning techniques** so the final dataset is reliable for a
 
 | Table         | Description                                      |
 |---------------|--------------------------------------------------|
-| `raw_data`    | Original uncleaned data                          |
-| `cleaned_data`| Final cleaned version, after transformations     |
-| *(Optional)* `lookup_tables` | Reference data for validation (e.g., country codes, valid categories) |
+| `layoffs.csv`    | Original uncleaned data                          |
+| `layoffs_clean.csv`| Final cleaned version, after transformations     |
 
 ---
 
@@ -34,8 +33,13 @@ To apply **SQL data cleaning techniques** so the final dataset is reliable for a
 
 Below are some typical tasks performed with **MySQL queries**.
 
-### ✅ 1. Standardize text formats
+### ✅ 1. Remove Duplicates
+   To prevent accidental changes to the original dataset, I duplicated the data into a separate table(layoffs_staging) before starting the cleaning process, I copied its data into a new table in the same database
 
 ```sql
-UPDATE raw_data
-SET customer_name = TRIM(UPPER(customer_name));
+CREATE TABLE layoffs_staging
+LIKE layoffs;
+
+INSERT layoffs_staging
+SELECT *
+FROM layoffs;
