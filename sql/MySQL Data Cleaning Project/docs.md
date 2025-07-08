@@ -1,2 +1,0 @@
-##
-Documents for the project
