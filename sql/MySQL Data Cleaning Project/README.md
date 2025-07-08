@@ -51,3 +51,25 @@ Below are some tasks I performed with **MySQL queries**.
 
 ### ✅ 1. Remove Duplicates
 I used row numbers to identify duplicates, so any row with a number greater than 1 is a duplicate
+```sql
+SELECT *,
+ROW_NUMBER() OVER(
+			PARTITION BY company,location,industry,total_laid_off,percentage_laid_off,'date',stage,country,funds_raised_millions) as row_num
+FROM world_layoffs.layoffs_staging;
+```
+<img src="docs/rowNum.png" alt="assigning row numbers" width="650" height="650">
+
+Then, I used a common table expression to find all the rows with a number greater than 1 (duplicates)
+```sql
+WITH duplicate_cte AS
+(
+	SELECT *,
+	ROW_NUMBER() OVER(
+				PARTITION BY company,location,industry,total_laid_off,percentage_laid_off,'date',stage,country,funds_raised_millions) as row_num
+	FROM world_layoffs.layoffs_staging
+)
+SELECT *
+FROM duplicate_cte
+WHERE row_num > 1;
+```
+<img src="docs/rowNum2.png" alt="assigning row numbers" width="650" height="650">
