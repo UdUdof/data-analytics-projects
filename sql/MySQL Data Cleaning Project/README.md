@@ -118,13 +118,17 @@ SELECT DISTINCT industry
 FROM layoffs_staging2
 ORDER BY 1;
 ```
-<img src="docs/crypto1.png" alt="" width="750" height="700">
+<img src="docs/crypto1.png" alt="" width="100" height="300">
+We can see that idustry names "crypto", "crypto Currency" seem to be referring to the same things. So I changed them to "Crypto"
 
 ```sql
-UPDATE layoffs_staging2
-SET company = trim(company);
+SELECT *
+FROM layoffs_staging2
+WHERE industry LIKE 'Crypto%';
 ```
 ```sql
 UPDATE layoffs_staging2
-SET company = trim(company);
+SET industry = 'Crypto'
+WHERE industry LIKE 'Crypto%';
 ```
+<img src="docs/crypto2.png" alt="" width="100" height="300">
