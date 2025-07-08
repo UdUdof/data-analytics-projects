@@ -28,18 +28,26 @@ To apply **SQL data cleaning techniques** so the final dataset is reliable for a
 | `layoffs_clean.csv`| Final cleaned version, after transformations     |
 
 ---
-
-## 🧹 **Key Cleaning Steps**
-
-Below are some typical tasks performed with **MySQL queries**.
-
-### ✅ 1. Remove Duplicates
-   To prevent accidental changes to the original dataset, I duplicated the data into a separate table(layoffs_staging) before starting the cleaning process, I copied its data into a new table in the same database
+## 👷🏼‍♀️ **Let's Get To Work!**
+   To prevent accidental changes to the original dataset, I duplicated the data into a new table (layoffs_staging) before starting the cleaning process
 
 ```sql
 CREATE TABLE layoffs_staging
 LIKE layoffs;
+```
+<img src="docs/layoffsStaging1.png" alt="layoffsStagingtable1" width="500" height="500">
 
+```sql
 INSERT layoffs_staging
 SELECT *
 FROM layoffs;
+```
+<img src="docs/layoffsStaging2.png" alt="layoffsStagingtable2" width="500" height="500">
+
+---
+## 🧹 **Key Cleaning Steps**
+
+Below are some tasks I performed with **MySQL queries**.
+
+### ✅ 1. Remove Duplicates
+I used row numbers to identify duplicates, so any row with a number greater than 1 is a duplicate
