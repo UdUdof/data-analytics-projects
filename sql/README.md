@@ -10,6 +10,8 @@ Welcome to my collection of **SQL** projects, where I explore and analyze data t
 - **Project 2: Business Performance Analysis**  
   This project analyzes sales and product performance for a business.
 
+- **Project 3: MySQL Data Cleaning**  
+  This project demonstrates the preocess of transforming raw data into a usuable state
 
 ---
 
