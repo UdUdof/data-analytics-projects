@@ -148,4 +148,18 @@ WHERE country LIKE 'United States%';
 
 #### 2b. Formatting the dataset
 While uploading the dataset as a CSV to MySQL, some rows didn’t import correctly. To fix this, I converted the file to JSON instead. However, this caused most of the columns to be read in as TEXT data types. To make the dataset functional and ensure MySQL recognizes each column correctly, I converted the date column from TEXT to the proper DATE format.
-<img src="docs/date2.png" alt="" width="100" height="120">  ~   <img src="docs/date3.png" alt="" width="100" height="100">
+```sql
+UPDATE layoffs_staging2
+SET `date` = str_to_date (`date`, '%m/%d/%Y');
+```
+<img src="docs/date2.png" alt="" width="100" height="170">  ~   <img src="docs/date3.png" alt="" width="100" height="170">
+
+#### 2c. Renaming Columns
+Clear column names make the dataset more user-friendly and self-explanatory
+```sql
+UPDATE layoffs_staging2
+SET `date` = str_to_date (`date`, '%m/%d/%Y');
+```
+<img src="docs/layoffsStaging2.png" alt="" width="100" height="170">  
+
+<img src="docs/rename.png" alt="" width="100" height="170">
