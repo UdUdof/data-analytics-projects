@@ -73,3 +73,18 @@ FROM duplicate_cte
 WHERE row_num > 1;
 ```
 <img src="docs/rowNum2.png" alt="duplicate rows" width="650" height="650">
+I tried to remove the duplicate values
+
+```sql
+DELETE
+FROM duplicate_cte
+WHERE row_num > 1;
+```
+
+Guess what! This did not work so I created a new table(layoffs_staging2), inserted values from layoffs_staging, and found duplicates again 🤦🏻
+```sql
+SELECT *
+FROM layoffs_staging2
+WHERE row_num > 1;
+```
+<img src="docs/rowNum4.png" alt="duplicate rows" width="650" height="650">
