@@ -184,7 +184,7 @@ I replaced the empty row with SQL's version of blank - NULL
 	SET industry = NULL
 	WHERE industry = '' OR industry = 'NULL';
 ```
-Then JOIN'ed the table with itself to check which industry name is NULL using "company" as a common column. This way I can copy the values from the non blank rows to the blank rows
+Then I joined the table to itself using the company column as a key, so I could identify rows where industry was NULL. This allowed me to copy the industry values from rows with valid data to those with missing values.
 ```sql
    SELECT t1.industry, t2.industry
 FROM layoffs_staging2 t1
@@ -200,4 +200,20 @@ JOIN layoffs_staging2 t2
 	 SET t1.industry = t2.industry
 	 WHERE (t1.industry IS NULL) AND t2.industry IS NOT NULL;
 ```
-<img src="docs/industryNull.png" alt="" width="200" height="200">    <img src="docs/industryNull2.png" alt="" width="200" height="200">
+<img src="docs/industryNull.png" alt="" width="300" height="300">  ~  <img src="docs/industryNull2.png" alt="" width="300" height="300">
+
+No more NULL/blank(😶) rows!
+
+#### 2e. Deleting Redundant Rows
+Rows with both total_laid_off and percentage_laid_off missing were removed because they will provide no useful information for analyzing layoff trends or totals.
+
+<img src="docs/tpNull.png" alt="" width="500" height="500">
+
+```sql
+ SELECT *
+FROM layoffs_staging2
+WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
+```  
+No more redundant data!
+<img src="tpFixed.png" alt="" width="700" height="700">
+
