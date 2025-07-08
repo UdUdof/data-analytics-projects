@@ -207,7 +207,7 @@ No more NULL/blank(😶) rows!
 #### 2e. Deleting Redundant Rows
 Rows with both total_laid_off and percentage_laid_off missing were removed because they will provide no useful information for analyzing layoff trends or totals.
 
-<img src="docs/tpNull.png" alt="" width="500" height="500">
+<img src="docs/tpNull.png" alt="" width="600" height="600">
 
 ```sql
  SELECT *
@@ -221,7 +221,7 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 ```
 No more redundant data!
 
-<img src="tpFixed.png" alt="" width="500" height="500">
+<img src="tpFixed.png" alt="" width="600" height="600">
 
 
 
