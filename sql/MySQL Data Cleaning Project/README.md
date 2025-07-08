@@ -119,7 +119,7 @@ FROM layoffs_staging2
 ORDER BY 1;
 ```
 <img src="docs/crypto1.png" alt="" width="100" height="300">
-We can see that idustry names "crypto", "crypto Currency" seem to be referring to the same thing. So I changed them to "Crypto"
+We can see that industry names "crypto", "crypto Currency" seem to refer to the same thing. So I changed them to "Crypto"
 
 ```sql
 SELECT *
@@ -132,3 +132,19 @@ SET industry = 'Crypto'
 WHERE industry LIKE 'Crypto%';
 ```
 <img src="docs/crypto2.png" alt="" width="100" height="200">
+
+I did this for an entry in "country"
+```sql
+SELECT DISTINCT country
+FROM layoffs_staging2
+WHERE country LIKE 'United States%' ;
+```
+```sql
+UPDATE layoffs_staging2
+SET country = 'United States'
+WHERE country LIKE 'United States%';
+```
+<img src="docs/crypto2.png" alt="" width="100" height="200">
+
+#### 2b. Formatting the dataset
+While i was trying to upload the dataset as a csv to MySQL, some of the rows would not show up so I had to convert it to JSON file. Because of this most of the fields(columns) were read in as TEXT. For this dataset to be functional, columns have to be in a format that MySQL can recognize them. So I changed the date column from TEXT to sql DATE format 
