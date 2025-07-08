@@ -119,7 +119,7 @@ FROM layoffs_staging2
 ORDER BY 1;
 ```
 <img src="docs/crypto1.png" alt="" width="100" height="300">
-We can see that idustry names "crypto", "crypto Currency" seem to be referring to the same things. So I changed them to "Crypto"
+We can see that idustry names "crypto", "crypto Currency" seem to be referring to the same thing. So I changed them to "Crypto"
 
 ```sql
 SELECT *
