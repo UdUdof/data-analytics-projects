@@ -72,4 +72,4 @@ SELECT *
 FROM duplicate_cte
 WHERE row_num > 1;
 ```
-<img src="docs/rowNum2.png" alt="assigning row numbers" width="650" height="650">
+<img src="docs/rowNum2.png" alt="duplicate rows" width="650" height="650">
