@@ -224,7 +224,7 @@ No more redundant data!
 <img src="tpFixed.png" alt="" width="600" height="600">
 
 #### 2f. Dropping (Deleting) A Column
-I created an extra column to help me detect duplicate rows. Now that the data cleaning is done (at least for now haha), it's not needed anymore so it will be deleted
+Earlier on in the data cleaning process, I created an extra column to help me detect duplicate rows. Now that the data cleaning is done (at least for now haha), it's not needed anymore so it will be deleted 👇🏼
 
 <img src="docs/rowNum1.png" alt="" width="600" height="600">
 
@@ -233,7 +233,9 @@ I created an extra column to help me detect duplicate rows. Now that the data cl
 DROP COLUMN row_num;
 ```
 
-🧼Now the dataset is all clean and ready for analysis!🧼
-
 <img src="docs/rowNumGone.png" alt="" width="600" height="600">
+
+## **🧼Now the dataset is all clean and ready for analysis!🧼**
+
+
 
