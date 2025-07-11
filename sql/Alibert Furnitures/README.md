@@ -48,7 +48,7 @@ Below are the questions answered in this project using **PostgreSQL queries**
 	  );
 ```
 <p align="center">
-  <img src="docs/NeverSold.png" alt="Product Never been sold" width="400">
+  <img src="docs/NeverSold.png" alt="Product Never been sold" width="300">
 </p>
 
 ### 💰 4. Customer total spend and rank
