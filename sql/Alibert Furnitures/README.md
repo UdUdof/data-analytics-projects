@@ -23,7 +23,7 @@ Below are the questions answered in this project using **PostgreSQL queries**
 	LIMIT 3;
 ```
 <p align="center">
-  <img src="docs/TopSelling.png" alt="Top Selling Products" width="600">
+  <img src="docs/TopSelling.png" alt="Top Selling Products" width="400">
 </p>
 
 ### 📈 2. Products whose sales amount is above average
@@ -35,7 +35,7 @@ Below are the questions answered in this project using **PostgreSQL queries**
 	HAVING AVG(f.saleamount) > (SELECT ROUND(AVG(saleamount),2) FROM factsales);
 ```
 <p align="center">
-  <img src="docs/TopSelling.png" alt="Products sold above average" width="600">
+  <img src="docs/TopSelling.png" alt="Products sold above average" width="400">
 </p>
 
 ### ❌ 3. Products that have never been sold
@@ -48,7 +48,7 @@ Below are the questions answered in this project using **PostgreSQL queries**
 	  );
 ```
 <p align="center">
-  <img src="docs/NeverSold.png" alt="Product Never been sold" width="600">
+  <img src="docs/NeverSold.png" alt="Product Never been sold" width="400">
 </p>
 
 ### 💰 4. Customer total spend and rank
@@ -64,7 +64,7 @@ Below are the questions answered in this project using **PostgreSQL queries**
 	ORDER BY Rank;
 ```
 <p align="center">
-  <img src="docs/CustomerRank.png" alt="Customer Ranking" width="600">
+  <img src="docs/CustomerRank.png" alt="Customer Ranking" width="400">
 </p>
 
 ### 🛍️ 5. Customers with the highest purchase(single amount)
