@@ -8,9 +8,9 @@
 
 **NextGen Corp.** is a dynamic technology company specializing in innovative software and hardware solutions. While the company continues to attract top talent and drive growth, recent concerns have emerged around:
 
-- 📉 Increasing **employee turnover**
-- 🎯 Variability in **employee performance**
-- 💰 Salary **disparities** across departments
+- Increasing **employee turnover**
+- Variability in **employee performance**
+- Salary **disparities** across departments
 
 This project provides a **data-driven HR strategy** to uncover insights, improve employee retention, and ensure equitable compensation practices across the organization.
 
@@ -30,34 +30,16 @@ This project provides a **data-driven HR strategy** to uncover insights, improve
 |---------------|-------------|
 | `employee`    | Basic employee details, hire dates, and department affiliation |
 | `department`  | Department names and IDs |
-| `performance` | Employee performance scores |
-| `salary`      | Salary information by employee |
+| `performance` | Employee monthly performance scores |
+| `salary`      | Salary data,including historical salary information for each employee |
 | `turnover`    | Exit dates and reasons for leaving |
 | `attendance`  | Attendance logs for employees |
 
 ---
 
-## 📌 Key Insights
-
-- Top 5 longest-serving employees (retention view)
-- Department-wise **turnover rates**
-- Performance distribution and at-risk employee identification
-- Correlation between **salary** and **performance**
-- Main reasons employees are leaving the company
-
----
-
-## 📎 Usage
-
-### Requirements
-- SQL (PostgreSQL or equivalent)
-- Microsoft Excel (for dashboards/visuals)
-
-### How to Use
-1. Run the provided SQL queries to extract insights from the database
-2. Import the results into Excel
-3. Use pre-built Excel templates or PivotTables to visualize trends
-4. Share insights with the HR department or leadership team
+### 💻 Tools Used
+- PostgreSQL or 
+- Microsoft Excel visuals
 
 ---
 
@@ -66,27 +48,24 @@ _(Add screenshots or chart previews here if applicable)_
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! To suggest improvements or new insights:
-
-1. Fork this repo
-2. Create a new branch (`feature/your-insight`)
-3. Commit your changes
-4. Open a pull request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
----
-
-## 💼 Contact
-
-For questions or collaboration opportunities, please reach out to the project maintainer.
-
+## 📌 Key Insights
+  ### 1) Employee Retention Analysis
+  a) Who are the top 5 highest serving employees?
+  ```sql
+   SELECT 
+   e.employee_id,
+   e.department_id,
+   e.first_name,
+   e.last_name,
+   e.hire_date,
+   COALESCE(TO_CHAR(t.turnover_date, 'YYYY-MM-DD'), 'Still employed') AS "Status"
+   FROM employee e
+   LEFT JOIN turnover t ON e.employee_id = t.employee_id
+   LEFT JOIN department d ON t.department_id = d.department_id
+   WHERE t.turnover_date IS NULL  
+   ORDER BY e.hire_date
+   LIMIT 5;
+  ```
 ---
 
 > **NextGen Corp. — Empowering Growth Through People Data**
