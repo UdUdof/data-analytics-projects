@@ -65,7 +65,12 @@ _(Add screenshots or chart previews here if applicable)_
    WHERE t.turnover_date IS NULL  
    ORDER BY e.hire_date
    LIMIT 5;
-  ```
+   ```
+<p align="center">
+  <img src="docs/TopServEmp.png" alt="Top Serving Employees" width="650">
+</p>
+The image shows the top 5 employees that have been with NextGen Corp. for the longest period of time
+
 ---
 
 > **NextGen Corp. — Empowering Growth Through People Data**
