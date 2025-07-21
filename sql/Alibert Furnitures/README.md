@@ -1,4 +1,6 @@
 ## 🛋️ Alibert Furniture Database — SQL Analysis
+[![Tool](https://img.shields.io/badge/tool-PostgreSQL-blue?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
 This project demonstrates how to extract valuable business insights from the Alibert Furniture Database, which contains information about customers, products, and sales transactions.
 
 ## 🗃️ **Database Tables**
