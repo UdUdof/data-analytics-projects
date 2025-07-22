@@ -69,8 +69,29 @@ _(Add screenshots or chart previews here if applicable)_
 <p align="center">
   <img src="docs/TopServEmp.png" alt="Top Serving Employees" width="650">
 </p>
-The image shows the top 5 employees that have been with NextGen Corp. for the longest period of time
+The image displays the top five longest-serving employees at NextGen Corp., based on their hire dates.
 
 ---
+ b) What is the turnover rate for each department?
+ ####
+   This section looks at how many employees are leaving each department. A high turnover rate in a department could mean there are      issues like poor work environment, low satisfaction, or lack of support.
+   
+  I calculated the turnover rate using this formula:
+   
+            Turnover Rate (%) = (Employees Who Left / Total Employees) * 100
+ 
+  ```sql
+   SELECT 
+		d.department_id, 
+		d.department_name, 
+        ROUND((CAST(COUNT(t.employee_id) AS DECIMAL) / COUNT(e.employee_id) * 100),2) AS "Turnover Rate"
+	FROM department d
+    JOIN employee e ON d.department_id = e.department_id
+	LEFT JOIN turnover t ON e.employee_id = t.employee_id
+	GROUP BY d.department_id, d.department_name;
+   ```
+<p align="center">
+  <img src="docs/TurnOverRate.png" alt="Turn Over Rate" width="650">
+</p>
 
-> **NextGen Corp. — Empowering Growth Through People Data**
+---
