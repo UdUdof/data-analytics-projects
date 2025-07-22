@@ -74,12 +74,12 @@ The image displays the top five longest-serving employees at NextGen Corp., base
 ---
  b) What is the turnover rate for each department?
  ####
-   This section looks at how many employees are leaving each department. A high turnover rate in a department could mean there are      issues like poor work environment, low satisfaction, or lack of support.
+   This section looks at how many employees are leaving each department. A high turnover rate in a department could mean there are      issues like **poor work environment, low satisfaction, or lack of support**.
    
   I calculated the turnover rate using this formula:
    
-            Turnover Rate (%) = (Employees Who Left / Total Employees) * 100
- 
+            Turnover Rate (%) = (Number of Employees Who Left / Total Employees in Department) * 100
+
   ```sql
    SELECT 
 		d.department_id, 
@@ -90,8 +90,15 @@ The image displays the top five longest-serving employees at NextGen Corp., base
 	LEFT JOIN turnover t ON e.employee_id = t.employee_id
 	GROUP BY d.department_id, d.department_name;
    ```
-<p align="center">
-  <img src="docs/TurnOverRate.png" alt="Turn Over Rate" width="650">
-</p>
+Results:
+
+  <img src="docs/TurnOverRate.png" alt="Turn Over Rate" width="400">
+
+  <img src="docs/TOR.png" alt="Turn Over Rate" width="400">
+
+**Key Insights**
+- Marketing has the highest turnover rate at 92.86%, suggesting a possible issue with retention in that department.
+- Engineering also shows a relatively high turnover rate of 66.67%, which may warrant further investigation.
+- Sales and HR have significantly lower turnover rates at 27.59% and 27.27% respectively, indicating better employee stability in those areas.
 
 ---
