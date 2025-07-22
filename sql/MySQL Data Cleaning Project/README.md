@@ -1,4 +1,6 @@
 # 🧹 MySQL Data Cleaning Project — layoffs
+[![Tool](https://img.shields.io/badge/tool-MySQL-blue?logo=mysql&logoColor=white)](https://www.postgresql.org/)
+
 
 This project demonstrates **practical data cleaning** using **MySQL**.  
 It showcases techniques to check, clean, and transform raw data into a usable format for analysis.
