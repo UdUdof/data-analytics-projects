@@ -92,13 +92,51 @@ The image displays the top five longest-serving employees at NextGen Corp., base
    ```
 Results:
 
-  <img src="docs/TurnOverRate.png" alt="Turn Over Rate" width="400">
-
-  <img src="docs/TOR.png" alt="Turn Over Rate" width="400">
+  <img src="docs/TurnOverRate.png" alt="Turn Over Rate" width="400"> 
+  
+Visualization:  
+  <img src="docs/TOR.png" alt="Turn Over Rate" width="450">
 
 **Key Insights**
 - Marketing has the highest turnover rate at 92.86%, suggesting a possible issue with retention in that department.
 - Engineering also shows a relatively high turnover rate of 66.67%, which may warrant further investigation.
 - Sales and HR have significantly lower turnover rates at 27.59% and 27.27% respectively, indicating better employee stability in those areas.
+
+---
+c) Which employees are at risk of leaving based on their performance?
+ ####
+   Employees with consistently low or declining performance and engagement are more likely to leave. Identifying them early allows    management to offer support and improve retention.
+   
+  ```sql
+   SELECT e.employee_id, 
+		   e.first_name,
+		   e.last_name,
+		   p.performance_score,
+		   t.turnover_date
+	FROM employee e
+   LEFT JOIN performance p ON e.employee_id = p.employee_id
+   LEFT JOIN turnover t ON e.employee_id = t.employee_id
+   WHERE  p.performance_score <= 3.5 AND turnover_date IS NULL -- they still work at the company
+   ORDER BY p.performance_score ASC;
+   ```
+Results:
+
+  <img src="docs/RiskOfLevn.png" width="550"> 
+
+---
+d) What are the main reasons employees are leaving the company?
+ ####
+   Employees often leave due to factors like lack of growth opportunities, poor management, inadequate compensation, work-life          imbalance, and low job satisfaction. Identifying these causes helps the company address issues and improve retention.
+   
+  ```sql
+   SELECT reason_for_leaving,
+	COUNT(employee_id) AS "Total Leave"
+	FROM turnover
+	GROUP BY reason_for_leaving
+	ORDER BY "Total Leave" DESC;
+   ```
+Results:
+
+  <img src="docs/ResnLeav.png" width="250"> 
 
 ---
