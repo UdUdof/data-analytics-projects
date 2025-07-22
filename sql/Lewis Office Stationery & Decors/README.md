@@ -1,4 +1,5 @@
 # 🗂️ Lewis Office Stationery & Decors — Business Performance Analysis
+[![Tool](https://img.shields.io/badge/tool-PostgreSQL-blue?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
 This project analyzes sales and product performance for **Lewis Office Stationery & Decors**, a supplier of office supplies, furnishings, housekeeping equipment, and public area items to various properties in the USA.
 
