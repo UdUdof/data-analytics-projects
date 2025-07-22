@@ -137,9 +137,9 @@ d) What are the main reasons employees are leaving the company?
    ```
 Results:
 
-  <img src="docs/ResnLeav.png" width="250"> 
+  <img src="docs/ResnLeav.png" width="290"> 
   
 Visualization:  
-  <img src="LeavRsnn.png" width="450">
+  <img src="docs/LeavRsnn.png" width="450">
 
 ---
