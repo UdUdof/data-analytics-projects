@@ -1,4 +1,5 @@
 # 🎓 Academic Performance Analysis — PostgreSQL 
+[![Tool](https://img.shields.io/badge/tool-PostgreSQL-blue?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
 This project analyzes academic data stored in a PostgreSQL database, covering **departments**, **courses**, **teachers**, and **student scores**.  
 It demonstrates practical skills in database design, SQL querying, and data insights generation.
