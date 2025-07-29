@@ -146,6 +146,7 @@ The top reason employees left the company was due to personal reasons (39%), fol
 ---
  ### 2) Employee Performance Analysis
  a) How many employees have a performance score of 5.0 OR below 3.5
+     This analysis identifies how many employees have either a top performance score of 5.0 or a low score below 3.5, highlighting both high achievers and those who may need           additional support.
   ```sql
    SELECT 
 	CASE 
@@ -169,6 +170,7 @@ Visualization:
 
 ---
  b) Which department has the most employees with a performance of 5.0 / below 3.5?
+    This analysis explores which department has the highest number of employees with either excellent performance (5.0) or low performance (below 3.5), helping to identify areas      of strength and concern across the organization.
   ```sql
    SELECT d.department_name, COUNT(*) AS "Total Employees"
 FROM performance p
@@ -185,6 +187,7 @@ The Marketing department has the highest number of employees at both ends of the
 ---
 ### 3) Salary Analysis
  a) What is the average salary by job title?
+    This analysis calculates the average salary for each job title, offering insight into compensation trends across different roles within the company
   ```sql
    SELECT e.job_title, 
 		   ROUND(AVG(salary_amount),2) AS "Avg Salary"
@@ -204,6 +207,7 @@ The highest average salary is earned by Sales Representatives ($84,285.71), foll
 
 ---
  b) How does performance correlate with salary across departments?
+    This analysis identifies the performance-based salary trend across departments within the company
   ```sql
    SELECT d.department_name,
 	       p.performance_score,
