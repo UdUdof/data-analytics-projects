@@ -230,6 +230,7 @@ Results:
 | `Sales`      | <img src="docs/AvgSalSle.png" width="250"> |
 
 Visualization:
+
  <img src="docs/PerfSal.png" alt="Performance based Salary" width="450">
 
 ---
