@@ -51,7 +51,7 @@ _(Add screenshots or chart previews here if applicable)_
 ---
 
 ## 📌 Key Insights
-  ### 1) Employee Retention Analysis
+  ### 1) Employee Retention Analysis 
   a) Who are the top 5 highest serving employees?
   ```sql
    SELECT 
@@ -137,10 +137,13 @@ d) What are the main reasons employees are leaving the company?
 	GROUP BY reason_for_leaving
 	ORDER BY "Total Leave" DESC; 
    ```
+
 Results:
+
   <img src="docs/ResnLeav.png" width="290"> 
   
 Visualization:  
+
   <img src="docs/LeavRsnn.png" width="450"> 
 
 The top reason employees left the company was due to personal reasons (39%), followed by finding another job (25%). Notably, career growth (18%) was also a key factor, suggesting the company could improve retention by offering clearer advancement opportunities and career development support.
@@ -159,9 +162,50 @@ FROM performance
 WHERE performance_score = 5.0 OR performance_score < 3.5
 GROUP BY "Score";
    ```
-  <img src="docs/EmpsLwPerf.png" alt="Employees with Low Performance" width="250">
-<img src="docs/EmpPerf.png" alt="Employee Performance Chart" width="250">
-Analysis indicates that 9 employees have a performance score of 5.0 and a total of 71 employees have a score of < 3.5 and this will require closer performance management.
+Results:
+
+ <img src="docs/EmpsLwPerf.png" alt="Employees with Low Performance" width="250">
+  
+Visualization:
+
+  <img src="docs/EmpPerf.png" alt="Employee Performance Chart" width="400">
+  
+ Analysis indicates that 9 employees have a performance score of 5.0 and a total of 71 employees have a score of < 3.5 - this will require closer performance management.
+
+---
+ b) Which department has the most employees with a performance of 5.0 / below 3.5?
+  ```sql
+   SELECT d.department_name, COUNT(*) AS "Total Employees"
+FROM performance p
+JOIN department d ON p.department_id = d.department_id
+WHERE performance_score = 5.0 OR performance_score < 3.5
+GROUP BY d.department_name
+ORDER BY "Total Employees" DESC
+LIMIT 1;
+   ```
+  <img src="docs/DprtmntLowPerf.png" alt="Departments with Lowest Performance" width="350">
+
+The Marketing department has the highest number of employees at both ends of the performance scale, those rated 5.0 and those below 3.5. This suggests a performance gap within the team that may benefit from closer performance management, clearer expectations, or  support for the underperformers.
+
+---
+### 3) Salary Analysis
+ a) What is the average salary by job title?
+  ```sql
+   SELECT e.job_title, 
+		   ROUND(AVG(salary_amount),2) AS "Avg Salary"
+	FROM employee e
+	JOIN salary s ON e.employee_id = s.employee_id
+	GROUP BY e.job_title;
+   ```
+Results:
+
+ <img src="docs/AvgSalTtl.png" alt="Employees with Low Performance" width="250">
+  
+Visualization:
+
+  <img src="docs/AvgSalTle.png" alt="Employee Performance Chart" width="400">
+  
+ Analysis indicates that 9 employees have a performance score of 5.0 and a total of 71 employees have a score of < 3.5 - this will require closer performance management.
 
 ---
  b) Which department has the most employees with a performance of 5.0 / below 3.5?
