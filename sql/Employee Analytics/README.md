@@ -159,10 +159,9 @@ FROM performance
 WHERE performance_score = 5.0 OR performance_score < 3.5
 GROUP BY "Score";
    ```
-<p align="center">
-  <img src="docs/EmpsLwPerf.png" alt="Employees with Low Performance" width="650">
-</p>
-Analysis indicates that 9 employees have a performance score of 5.0 and a total of 71 employees have a score of < 3.5
+  <img src="docs/EmpsLwPerf.png" alt="Employees with Low Performance" width="250">
+<img src="docs/EmpPerf.png" alt="Employee Performance Chart" width="250">
+Analysis indicates that 9 employees have a performance score of 5.0 and a total of 71 employees have a score of < 3.5 and this will require closer performance management.
 
 ---
  b) Which department has the most employees with a performance of 5.0 / below 3.5?
@@ -175,7 +174,8 @@ GROUP BY d.department_name
 ORDER BY "Total Employees" DESC
 LIMIT 1;
    ```
-<p align="center">
-  <img src="docs/DprtmntLowPerf.png" alt="Departments with Lowest Performance" width="450">
-</p>
+  <img src="docs/DprtmntLowPerf.png" alt="Departments with Lowest Performance" width="350">
+
 The Marketing department has the highest number of employees at both ends of the performance scale, those rated 5.0 and those below 3.5. This suggests a performance gap within the team that may benefit from closer performance management, clearer expectations, or  support for the underperformers.
+
+---
