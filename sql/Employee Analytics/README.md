@@ -211,7 +211,8 @@ The highest average salary is earned by Sales Representatives ($84,285.71), foll
 
 ---
  b) How does performance correlate with salary across departments?
-    This analysis identifies the performance-based salary trend across departments within the company
+ ####
+This analysis identifies the performance-based salary trend across departments within the company to determine if employess are properly compensated
   ```sql
    SELECT d.department_name,
 	       p.performance_score,
