@@ -40,17 +40,12 @@ This project provides a **data-driven HR strategy** to uncover insights, improve
 ---
 
 ### 💻 Tools Used
-- PostgreSQL or 
+- PostgreSQL 
 - Microsoft Excel visuals
 
 ---
 
-## 📊 Sample Visuals
-_(Add screenshots or chart previews here if applicable)_
-
----
-
-## 📌 Key Insights
+## 📌 Data-Driven Insights
   ### 1) Employee Retention Analysis 
   a) Who are the top 5 highest serving employees?
   ```sql
@@ -231,6 +226,14 @@ Results:
 
 Visualization:
 
- <img src="docs/PerfSal.png" alt="Performance based Salary" width="800">
+ <img src="docs/PerfSal.png" alt="Performance based Salary" width="1000">
+ Performance based salary distribution appears inconsistent across departments. While some lower performance scores (e.g., 3.2–3.5) are associated with high salaries, particularly in Engineering and Marketing, several higher performing employees (ratings of 4.5 and above) earn comparatively less. This suggests a potential misalignment between performance and compensation, which could impact motivation and retention if not addressed
 
 ---
+## 💡 Recommendations
+To ensure continued success at NextGen Corp, it is recommended that the HR department adopts the following measures:
+
+- To **improve retention** within departments and NextGen Corp, the company should offer compensation at or above market rate, support career growth, and promote a healthy work-life. Effective leadership, recognizing employee contributions, and conducting regular feedback interviews will also help build trust and reduce employee turnover.
+- To **improve low performance**, NextGen Corp. should provide clear expectations from employees, regular feedback for growth, and support such as training or mentorship.  Addressing performance issues early and offering opportunities for growth can boost employee confidence, engagement, and productivity.
+- The company should implement a **fair performance based compensation** system that will align salaries and rewards with actual employee performance. Regular salary reviews, clear performance metrics, and open communication will help ensure fairness, boost employee morale, and improve overall employee satisfaction
+
