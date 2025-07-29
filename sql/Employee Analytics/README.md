@@ -199,26 +199,34 @@ The Marketing department has the highest number of employees at both ends of the
    ```
 Results:
 
- <img src="docs/AvgSalTtl.png" alt="Employees with Low Performance" width="250">
+ <img src="docs/AvgSalTtl.png" alt="Avg Salary" width="250">
   
 Visualization:
 
-  <img src="docs/AvgSalTle.png" alt="Employee Performance Chart" width="400">
+  <img src="docs/AvgSalTle.png" alt="Average Salary" width="450">
   
  Analysis indicates that 9 employees have a performance score of 5.0 and a total of 71 employees have a score of < 3.5 - this will require closer performance management.
 
 ---
- b) Which department has the most employees with a performance of 5.0 / below 3.5?
+ b) How does performance correlate with salary across departments?
   ```sql
-   SELECT d.department_name, COUNT(*) AS "Total Employees"
-FROM performance p
-JOIN department d ON p.department_id = d.department_id
-WHERE performance_score = 5.0 OR performance_score < 3.5
-GROUP BY d.department_name
-ORDER BY "Total Employees" DESC
-LIMIT 1;
+   SELECT d.department_name,
+	       p.performance_score,
+	       ROUND(AVG(s.salary_amount), 2) AS avg_salary
+	FROM employee e
+	JOIN salary s ON e.employee_id = s.employee_id
+	JOIN performance p ON e.employee_id = p.employee_id
+	JOIN department d ON e.department_id = d.department_id
+	GROUP BY d.department_name, p.performance_score
+	ORDER BY d.department_name, p.performance_score;
    ```
-  <img src="docs/DprtmntLowPerf.png" alt="Departments with Lowest Performance" width="350">
+| Table         | Description |
+|---------------|-------------|
+| `Engineering`    |  <img src="docs/AvgSalEng.png" alt="Departments with Lowest Performance" width="200">|
+| `HR`  | <img src="docs/AvgSalHR.png" alt="Departments with Lowest Performance" width="200"> |
+| `Marketing` |<img src="docs/AvgSalMark.png" alt="Departments with Lowest Performance" width="200"> |
+| `Sales`      | <img src="docs/AvgSalSle.png" alt="Departments with Lowest Performance" width="200"> |
+
 
 The Marketing department has the highest number of employees at both ends of the performance scale, those rated 5.0 and those below 3.5. This suggests a performance gap within the team that may benefit from closer performance management, clearer expectations, or  support for the underperformers.
 
