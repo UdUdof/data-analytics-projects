@@ -231,6 +231,6 @@ Results:
 
 Visualization:
 
- <img src="docs/PerfSal.png" alt="Performance based Salary" width="450">
+ <img src="docs/PerfSal.png" alt="Performance based Salary" width="800">
 
 ---
