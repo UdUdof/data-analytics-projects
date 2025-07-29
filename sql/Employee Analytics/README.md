@@ -224,12 +224,12 @@ Results:
 
 | Table         | Description |
 |---------------|-------------|
-| `Engineering`    |  <img src="docs/AvgSalEng.png" alt="Departments with Lowest Performance" width="250">|
-| `HR`  | <img src="docs/AvgSalHR.png" alt="Departments with Lowest Performance" width="250"> |
-| `Marketing` |<img src="docs/AvgSalMark.png" alt="Departments with Lowest Performance" width="250"> |
-| `Sales`      | <img src="docs/AvgSalSle.png" alt="Departments with Lowest Performance" width="250"> |
+| `Engineering`    |  <img src="docs/AvgSalEng.png" width="250">|
+| `HR`  | <img src="docs/AvgSalHR.png" width="250"> |
+| `Marketing` |<img src="docs/AvgSalMark.png" width="250"> |
+| `Sales`      | <img src="docs/AvgSalSle.png" width="250"> |
 
-
-The Marketing department has the highest number of employees at both ends of the performance scale, those rated 5.0 and those below 3.5. This suggests a performance gap within the team that may benefit from closer performance management, clearer expectations, or  support for the underperformers.
+Visualization:
+ <img src="docs/PerfSal.png" alt="Performance based Salary" width="450">
 
 ---
