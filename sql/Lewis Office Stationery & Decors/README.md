@@ -45,7 +45,7 @@ FROM orders
 JOIN products on orders."ProductID" = products."ProductID" --JOIN: INNER
 GROUP BY "ProductCategory";
 ```
-<img src="docs/DiscountedRevenue.png" alt="ERD Diagram" width="300" height="100">
+<img src="docs/DiscountedRevenue.png" alt="ERD Diagram" width="300" height="300">
 This query indicates the total revenue (with discounts applied) generated from each product category sold by Lewis Office
 
 ---
