@@ -77,5 +77,5 @@ Below are the questions answered in this project using **PostgreSQL queries**
 	GROUP BY 1; 
 ```
 <p align="center">
-  <img src="docs/CustomerPurchase.png" alt="Customer Purchase" width="600">
+  <img src="docs/CustomerPurchase.png" alt="Customer Purchase" width="300">
 </p>
