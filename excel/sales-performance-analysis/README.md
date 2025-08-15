@@ -35,7 +35,7 @@ The dataset includes transactional and customer-level information with the follo
 
 ## 📊 Key Dashboard Features
 
-### 🗂️KPI Cards - Metrics 
+### KPI Cards - Metrics 
 - **Total Transactions**
 - **Total Quantity Sold**
 - **Total Cost**
@@ -43,7 +43,7 @@ The dataset includes transactional and customer-level information with the follo
 - **Profit**
 - **Loss**
 
-### 📈 Visual Insights
+### Visual Insights
 - **Profit Trend by Year**
 - **Total Revenue by Year**
 - **Profit by Customer Gender**
@@ -51,7 +51,7 @@ The dataset includes transactional and customer-level information with the follo
 - **Profit by Payment Option**
 - **Top 10 States by Total Profit**
 
-### 🎛️ Interactive Elements
+### Interactive Elements
 - **Salesperson Slicer** – filter views by individual salesperson
 - **Payment Option Slicer** – analyze performance by payment method
         <p align="center">
@@ -71,7 +71,7 @@ The dataset includes transactional and customer-level information with the follo
 
 ---
 
-## 📁 Files Included
+## Files Included
 
 - `SalesPerformance.xlsx` – Interactive dashboard file  [Web View](https://1drv.ms/x/c/2d0f9638f277c6b4/ETaKmswEmlFFvvtjfGkE1JoBIdXBYt2KKnHEmU51vSwU0A) 
 - `SalesData.png` – Preview of the dataset 
@@ -88,4 +88,4 @@ The dataset includes transactional and customer-level information with the follo
 
 ---
 
-📊 *This project demonstrates how Excel can be used to turn raw sales data into actionable business insights using clean design and interactive visual tools.*
+*This project demonstrates how Excel can be used to turn raw sales data into actionable business insights using clean design and interactive visual tools.*
