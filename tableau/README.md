@@ -4,20 +4,12 @@ Welcome to my collection of **Tableau** projects where I create engaging and ins
 
 ## Projects
 
-- **Project 1: Sales Dashboard**  
-  Designed an interactive dashboard to track sales performance across regions and product categories.
+- **Project 1: 🧑‍💼📈 HR Analytics - Understanding Workforce Dynamics**  
+  Designed a comprehensive dashboard to support HR teams in making informed, data-driven decisions by providing clear insights into key workforce metrics..
 
-- **Project 2: Customer Segmentation Visualization**  
-  Visualizing customer groups based on purchasing behavior to identify target markets.
-
-*(More projects coming soon!)*
+- **Project 2: Yearly Sales**  
+  Developed an interactive dashboard to monitor sales performance over a four-year period across multiple regions. Users can toggle between a high-level sales overview and a detailed table highlighting key metrics such as total sales, quantity sold, and profit per transaction. 
 
 ---
-
-## What I Learned
-
-- Creating compelling visual stories using Tableau’s drag-and-drop interface.  
-- Connecting to different data sources and preparing data for visualization.  
-- Using calculated fields, filters, and parameters to enhance interactivity.
 
 Feel free to explore the dashboards and reach out if you’d like to connect or collaborate!
