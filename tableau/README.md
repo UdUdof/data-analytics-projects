@@ -1,5 +1,6 @@
 # Tableau Projects
-[![Tool](https://img.shields.io/badge/tool-Tableau-blue?logo=tableau&logoColor=white)](https://www.tableau.com)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+
 
 Welcome to my collection of **Tableau** projects where I create engaging and insightful data visualizations.
 
