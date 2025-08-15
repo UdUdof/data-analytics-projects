@@ -15,10 +15,4 @@ This folder contains my projects using **Excel** for data cleaning, analysis, an
 
 ---
 
-## What I Learned
-
-- How to clean and organize data efficiently.  
-- Using pivot tables to summarize and analyze large datasets.  
-- Creating clear and informative charts for storytelling.
-
 Feel free to explore the files and reach out with any questions!
