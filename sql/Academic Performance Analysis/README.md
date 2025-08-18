@@ -29,7 +29,6 @@ It demonstrates practical skills in database design, SQL querying, and data insi
   <img src="EntityDiagram.png" alt="ERD" width="600" height="700"/>
 </p>
 
-
 ---
 
 ## 🗝️ **Key Queries & Insights**
