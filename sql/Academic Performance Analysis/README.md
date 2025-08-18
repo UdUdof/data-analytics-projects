@@ -39,7 +39,7 @@ It demonstrates practical skills in database design, SQL querying, and data insi
 	SELECT course_name AS "Courses"
 	FROM courses;
 ```
-<img src="docs/coursesOffered.png" alt="ERD Diagram" width="300" height="100">
+<img src="docs/coursesOffered.png" alt="ERD Diagram" width="300" height="300">
 Looks like this department is for data analytics, awesome!
 
 ---
