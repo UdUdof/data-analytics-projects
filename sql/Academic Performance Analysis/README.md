@@ -26,7 +26,7 @@ It demonstrates practical skills in database design, SQL querying, and data insi
 - Each **score** ties a student to a course
   
 <p align="center">
-  <img src="EntityDiagram.png" alt="ERD" width="700" height="200"/>
+  <img src="EntityDiagram.png" alt="ERD" width="600" height="700"/>
 </p>
 
 
