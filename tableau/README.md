@@ -13,6 +13,8 @@ Welcome to my collection of **Tableau** projects where I create engaging and ins
 - **Project 2: 📆📊 Yearly Sales**  
   Developed an interactive dashboard to monitor sales performance over a four-year period across multiple regions. Users can toggle between a high-level sales overview and a detailed table highlighting key metrics such as total sales, quantity sold, and profit per transaction. [Dashboard](https://public.tableau.com/app/profile/uduak.udofia/viz/BuzzStoreDashboard/ExecutiveView#1)
 
+- **Project 3: 🧑‍💼💸 Employee And Compensation Insights**  
+  Designed an interactive dashboard to provide clear data on compensation, employee trends, and retention with the aim of improving employee compensation. [Dashboard](https://public.tableau.com/app/profile/uduak.udofia/viz/EmployeeCompensationInsights/Dashboard1#1)
 ---
 
 Feel free to explore the dashboards and reach out if you’d like to connect or collaborate!
